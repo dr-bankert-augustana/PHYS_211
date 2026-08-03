@@ -1,3 +1,5 @@
+import numpy as np
+
 vi = 8
 vf = 3
 ti = 2
