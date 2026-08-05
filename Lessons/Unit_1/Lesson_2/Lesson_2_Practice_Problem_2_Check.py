@@ -2,6 +2,8 @@
 ## Import Libraries:                                                                              ##
 ##================================================================================================##
 
+import sys
+
 import numpy as np
 
 ##================================================================================================##
@@ -29,28 +31,46 @@ right_tolerance = 0.01
 close_tolerance = 0.1
 
 ##================================================================================================##
-## Set Problem Solution:                                                                          ##
+## Wrap Answer Check in a Function:                                                               ##
 ##================================================================================================##
 
-solution_value = problem_2_solution_value
+def check_answer():
 
-solution_units = problem_2_solution_units
+  ##==============================================================================================##
+  ## Set Problem Solution:                                                                        ##
+  ##==============================================================================================##
 
-##================================================================================================##
-## Set the Student's Answer:                                                                      ##
-##================================================================================================##
+  if "problem_2_solution_value" not in globals():
 
-given_value = answer_2_value
+    print("You must generate the problem before checking the answer.")
 
-given_units = answer_2_units
+    return
+  
+  solution_value = problem_2_solution_value
+  solution_units = problem_2_solution_units
 
-##================================================================================================##
-## Check that Answer is a Number:                                                                 ##
-##================================================================================================##
+  ##==============================================================================================##
+  ## Set the Student's Answer:                                                                    ##
+  ##==============================================================================================##
 
-if isinstance(given_value, str): print("Your answer value must be a number only!")
+  if ("answer_2_value" not in globals()) or ("answer_2_units" not in globals()):
 
-else:
+    print("You must fully answer the problem before checking the answer.")
+
+    return
+
+  given_value = answer_2_value 
+  given_units = answer_2_units
+
+  ##==============================================================================================##
+  ## Check that Answer is a Number:                                                               ##
+  ##==============================================================================================##
+
+  if isinstance(given_value, str): 
+
+    print("Your answer value must be a number only!")
+
+    return
 
   ##==============================================================================================##
   ## Get Absolute Percent Difference of Student Answer to Solution:                               ##
@@ -138,7 +158,7 @@ else:
   ## Check the Student's Units:                                                                   ##
   ##==============================================================================================##
 
-  if units not in solution_units: print ("Units are Incorrect!")
+  if given_units not in solution_units: print ("Units are Incorrect!")
 
   else: print ("Units are Correct!")
 
@@ -146,4 +166,6 @@ else:
   ## Encourage Student to try again:                                                              ##
   ##==============================================================================================##
 
-  if (outcome != outcome_right) or (units not in solution_units): print("Try Again!")
+  if (outcome != outcome_right) or (given_units not in solution_units): print("Try Again!")
+
+check_answer()
