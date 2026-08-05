@@ -9,6 +9,8 @@ if (acceleration == answer_1):
 
   print("Correct!")
 
+elif (np.abs(acceleration - answer_1) / acceleration
+
 else:
 
   print("Incorrect!")
