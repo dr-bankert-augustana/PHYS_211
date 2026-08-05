@@ -48,10 +48,10 @@ problem_2_solution_units = ["m/s^2", "meters per second squared", "mpss"]
 ## Create the Word Problem:                                                                       ##
 ##================================================================================================##
 
-problem_2_prompt = f"""
+problem_prompt = f"""
 A cart travels along the positive direction. At time {ti} s, its velocity is {vi} m/s. At {tf} s, 
 the cart's velocity has changed to {vf} m/s. Calculate the average acceleration of the cart between 
 these two measurements.
 """
 
-print(problem_2_prompt)
+print(problem_prompt)
