@@ -19,10 +19,16 @@ rd.seed(int(seed))
 ## Set Problem Parameters:                                                                        ##
 ##================================================================================================##
 
-vi = np.round(rd.uniform(-20, 20), 2)
-vf = np.round(rd.uniform(-20, 20), 2)
-ti = np.round(rd.uniform(1, 30), 2)
-tf = np.round(rd.uniform(1, 30), 2)
+v_min = -20.0
+v_max =  20.0
+t_min =   0.0
+t_max =  30.0
+round =     2
+
+vi = np.round(rd.uniform(v_min, v_max), round)
+vf = np.round(rd.uniform(v_min, v_max), round)
+ti = np.round(rd.uniform(t_min, t_max), round)
+tf = np.round(rd.uniform(t_min, t_max), round)
 
 ##------------------------------------------------------------------------------------------------##
 ## Ensure that the Final Time is Greater than the Initial Time:                                   ##
