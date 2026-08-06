@@ -1,6 +1,7 @@
 ##================================================================================================##
 ## Import Libraries:                                                                              ##
 ##================================================================================================##
+import time
 
 import numpy as np
 import random as rd
@@ -12,8 +13,6 @@ import random as rd
 try: seed
 
 except NameError: seed = -1
-
-print(seed)
 
 if (seed == -1): rd.seed(time.time())
 
