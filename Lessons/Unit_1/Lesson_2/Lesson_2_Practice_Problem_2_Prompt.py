@@ -13,6 +13,8 @@ try: seed
 
 except NameError: seed = -1
 
+print(seed)
+
 if (seed == -1): rd.seed(time.time())
 
 else: rd.seed(int(seed))
