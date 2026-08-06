@@ -84,7 +84,7 @@ choices = rd.sample(question["choices"], len(question["choices"]))
 
 choice_headers = ["A.", "B.", "C.", "D."]
 
-problem_1_solution = choice_headers[choices.index(solution)]
+problem_1_solution = choice_headers[choices.index(solution)][:-1]
 
 ##================================================================================================##
 ## Print the Prompt and Choices:                                                                  ##
