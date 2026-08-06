@@ -11,9 +11,11 @@ import random as rd
 
 try: seed
 
-except NameError: seed = 42
+except NameError: seed = -1
 
-rd.seed(int(seed))
+if (seed == -1): rd.seed(time.time())
+
+else: rd.seed(int(seed))
 
 ##================================================================================================##
 ## Set Problem Parameters:                                                                        ##
