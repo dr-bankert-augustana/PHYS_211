@@ -96,6 +96,3 @@ print()
 for choice in choices:
 
   print(choice_headers[choices.index(choice)], choice)
-
-print()
-print("The correct answer is", problem_1_solution)
