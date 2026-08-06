@@ -146,7 +146,7 @@ velocity = np.array([rd.uniform(v_min, v_max), 0])
 
 acceleration = np.array([rd.uniform(a_min, a_max), 0.0])
 
-problem_4_solution = acceleration
+problem_4_solution_value = acceleration
 
 ##------------------------------------------------------------------------------------------------##
 ## Create a List to Store the Time History:                                                       ##
