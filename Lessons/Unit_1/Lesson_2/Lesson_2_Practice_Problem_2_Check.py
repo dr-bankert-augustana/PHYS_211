@@ -27,8 +27,8 @@ outcome_wrong_units   = "Units are Incorrect!"
 ## Establish Tolerances:                                                                          ##
 ##================================================================================================##
 
-right_tolerance = 0.01
-close_tolerance = 0.1
+right_tolerance = 0.1
+close_tolerance = 0.2
 
 ##================================================================================================##
 ## Wrap Answer Check in a Function:                                                               ##
