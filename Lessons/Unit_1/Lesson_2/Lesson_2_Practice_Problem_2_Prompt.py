@@ -147,6 +147,7 @@ position = np.array([rd.uniform(x_min, x_max), 0])
 velocity = np.array([rd.uniform(v_min, v_max), 0.0])
 
 problem_2_solution_value = velocity
+problem_2_solution_units = ["m/s", "meters per second", "mps"]
 
 ##------------------------------------------------------------------------------------------------##
 ## Create a List to Store the Time History:                                                       ##
