@@ -370,6 +370,7 @@ Rules:
 - Keep the "Problem" value on one line.
 - Structure the "Problem" to solve for the "Target".
 - Every "Values" entry must be a plain numeric JSON value.
+- Avoid using 0 as a value.
 
 Example shape:
 {example}
