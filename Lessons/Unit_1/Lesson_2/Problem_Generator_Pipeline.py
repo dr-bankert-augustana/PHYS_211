@@ -371,6 +371,7 @@ Rules:
 - Structure the "Problem" to solve for the "Target".
 - Every "Values" entry must be a plain numeric JSON value.
 - Avoid using 0 as a value.
+- Values may be negative as long as they make logical sense.
 
 Example shape:
 {example}
