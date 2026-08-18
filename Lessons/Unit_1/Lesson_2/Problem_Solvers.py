@@ -293,7 +293,7 @@ TAR_DICT = {
     "1d motion with constant velocity v2" : {
         "name": "tf",
         "description": "final time (in seconds)",
-        "example": 22.5,:
+        "example": 22.5,
       },
 
     "1d average acceleration" : {
